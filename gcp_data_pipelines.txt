@@ -1,0 +1,17 @@
+GCP data pipelines:
+--------------------
+
+1. Oracle -- batch---> SFTP-->Landing Zone(NAS)-->GCS--> BQ stg-->BQ hist-->Auth Views
+2. Oracle -- batch---> SFTP-->Landing Zone(NAS)-->GCS(xml)--> Dataflow --> (csv)BQ stg-->BQ hist-->Auth Views
+3. Teradata -- batch---> SFTP-->Landing Zone(NAS)-->GCS--> Databricks/dataproc Pyspark(transformation) --> GCS/BQ stg-->BQ hist-->Auth Views
+4. Hadoop-- batch---> Dataproc(hive)Spark -->GCS--> BQ stg-->BQ hist-->Auth Views
+5. Hadoop-- batch---> Dataproc(hive) -->Databricks(PySpark) --> GCS--> BQ stg-->BQ hist-->Auth Views
+
+
+NRT:
+
+1. Streaing(API/DB) -->CDC(Attunity, IBM InfoSphear)--> Kafka-->pub/sub-->dataflow--> BQ stg -->BQ hist --> Auth Views
+2. Streaing(API/DB) --> CDC(Attunity,IBM InfoSphear) --> Kafka-->Databricks(Spark stream) -->BQ stg -->BQ hist --> Auth Views
+
+
+

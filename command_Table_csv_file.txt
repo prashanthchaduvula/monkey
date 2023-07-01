@@ -1,0 +1,14 @@
+python /home/udaykirande860/bigquery_sql.py \
+    --project=modern-replica-387105 \
+    --job_name=dataflow-forbq \
+	--region=us-central1 \
+    --runner=DirectRunner \
+    --temp_location=gs://bucket1234forgcp1234/tmp  \
+    --staging_location=gs://bucket1234forgcp1234/stage
+
+
+create table MASTER (UID VARCHAR(50), FN CHAR(20), MN CHAR(20), LN CHAR(20), DOB VARCHAR(10), eMailid varchar(20), Contact VARCHAR(20), ADDRESS VARCHAR(50),LastUpdatedDay DATE)
+
+
+FN	MN	LN	DOB	eMailID	Contact	Address	LastUpdatedDay
+abc	 	xyz	 	abc@email.com	55555	State	2-3-2023

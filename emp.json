@@ -1,0 +1,15 @@
+[
+{
+	    "name": "emp_id",
+		"type": "integer",
+		"mode": "required",
+		"description": "this is emp_id"
+ },
+{
+		"name":"emp_name",
+		"type":"string",
+		"mode":"required",
+		"description":"this is emp_name"
+}
+		
+]
